@@ -51,7 +51,7 @@ export default function MessageList({ messages }: MessageListProps) {
                   <span className="text-xs text-gray-500">{format(msg.createdAt, "h:mm a")}</span>
                 </div>
               )}
-              <div className="text-sm text-gray-800 whitespace-pre-wrap break-words">
+              <div className="text-sm text-black whitespace-pre-wrap break-words">
                 {msg.content.includes("```") ? (
                   <div>
                     {msg.content.split("```").map((part, i) =>
